@@ -23,10 +23,14 @@ int read_format(char *format, va_list arg)
 	i = 0;
 	while(format[i])
 	{
+		// Зануляю структуру перед каждым проходом
 		temp = (t_struct){0, 0, 0, 0, 0, 0, 0, 0};
 		if (format[i] == '%' && format[i + 1] != '\0')
 		{
+			// Поиск всех флагов в строке
 			i = ft_parse_flags(format, ++i, &flags, arg);
+			// Печатаю в зависимости от типа данных и запоинаю символы в
+			// струткуру
 			flags.length += parse_data(format[i], arg, flags);
 			i++;
 		}
@@ -43,13 +47,18 @@ int	ft_parse_flags(char *format, int i, t_struct *flags, va_list arg)
 {
 	while(format[i])
 	{
+		// Проверка на корректный формат данных в строке
 		if (!check_flags(format[i]) && !check_type(format[i]) && !ft_isdigit
 		(format[i]))
 			break ;
+//		Нулями можно забить только в случае, если нет модификаторов ширины и
+//		не было минуса (0 с минусом не работает)
 		if (format[i] == '0' && flags->width == 0 && flags->minus == 0)
 			flags->zero = 1;
 //		if (format[i] == '.')
 //			i = flag_dot(...);
+//		*flags - позволяющая изменить все значения структуры в функции
+//		инициализации минуса (то же самое делалось в ГНЛ с *line)
 		if (format[i] == '-')
 			*flags = initilize_minus(*flags);
 //		if (format[i] == '*')
