@@ -55,14 +55,10 @@ int	ft_parse_flags(char *format, int i, t_struct *flags, va_list arg)
 //		не было минуса (0 с минусом не работает)
 		if (format[i] == '0' && flags->width == 0 && flags->minus == 0)
 			flags->zero = 1;
-//		if (format[i] == '.')
-//			i = flag_dot(...);
 //		*flags - позволяющая изменить все значения структуры в функции
 //		инициализации минуса (то же самое делалось в ГНЛ с *line)
 		if (format[i] == '-')
 			*flags = initilize_minus(*flags);
-//		if (format[i] == '*')
-//			i = ...;
 		if (ft_isdigit(format[i]))
 			*flags = initilize_digit(format[i], *flags);
 		if(check_type(format[i]))
@@ -82,6 +78,9 @@ int		parse_data(int c, va_list arg, t_struct flags)
 	i = 0;
 	if (c == 'c')
 		i = ft_char_output(va_arg(arg, int), flags);
-
+	else if (c == 's')
+		i = ft_string_output(va_arg(arg, char *), flags);
+	else if (c == 'd' || c == 'i')
+		i = ft_int_output(va_arg(arg, int), flags);
 	return (i);
 }

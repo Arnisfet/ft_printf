@@ -31,5 +31,13 @@ int ft_char_output(char c, t_struct flags);
 int		parse_data(int c, va_list arg, t_struct flags);
 t_struct initilize_digit(char c, t_struct flags);
 t_struct	initilize_minus(t_struct flags);
-int		print_width(int width, int zero, t_struct flags);
+int		print_width(int width, int pr_format, int zero);
+int			initilize_dot(char *format, int start, t_struct *flags);
+int ft_string_output(char *format, t_struct flags);
+size_t	ft_strlen (char *str);
+int ft_int_output(int c, t_struct flags);
+char	*ft_itoa(int n);
+char	*ft_strdup(const char *str);
+void	*ft_memcpy (void *dst, const void *src, size_t n);
 #endif //PRINTF_FT_PRINTF_H
+

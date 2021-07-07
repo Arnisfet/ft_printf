@@ -12,7 +12,7 @@ int	check_type(int c)
 
 int	check_flags(int c)
 {
-	return ((c == '-') || (c == ' ') || (c == '0') || (c == '.') || (c == '*'));
+	return ((c == '-') || (c == ' ') || (c == '0'));
 }
 
 
@@ -28,4 +28,14 @@ int	ft_isdigit(int ch)
 	if (ch >= 48 && ch <=57)
 		return (ch);
 	return (0);
+}
+
+size_t	ft_strlen (char *str)
+{
+	size_t	i;
+
+	i = 0;
+	while (str[i])
+		i++;
+	return (i);
 }
