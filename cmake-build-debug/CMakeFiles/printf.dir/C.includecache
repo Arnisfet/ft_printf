@@ -6,7 +6,11 @@
 
 #IncludeRegexTransform: 
 
-/home/vitya/Desktop/school/day03/printf/ft_printf.h
+/Users/mrudge/Desktop/printf/ft_outputs.c
+ft_printf.h
+/Users/mrudge/Desktop/printf/ft_printf.h
+
+/Users/mrudge/Desktop/printf/ft_printf.h
 stdarg.h
 -
 stdlib.h
@@ -15,14 +19,4 @@ unistd.h
 -
 stdio.h
 -
-
-/home/vitya/Desktop/school/day03/printf/main.c
-stdio.h
--
-malloc.h
--
-stdarg.h
--
-ft_printf.h
-/home/vitya/Desktop/school/day03/printf/ft_printf.h
 

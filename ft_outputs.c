@@ -106,3 +106,121 @@ int ft_int_output(int c, t_struct flags)
 	}
 return (counter);
 }
+
+int ft_percent_output(t_struct flags)
+{
+	int counter;
+
+	counter =0;
+	if (flags.zero > 0 && flags.minus == 0)
+	{
+		counter += print_width(flags.width, 1, flags.zero);
+		write(1, "%", 1);
+		counter++;
+	}
+	if (flags.minus == 1)
+	{
+		write(1, "%", 1);
+		counter++;
+		counter += print_width(flags.width, 1, 0);
+	}
+	if (flags.minus == 0 && flags.zero == 0)
+	{
+		counter += print_width(flags.width, 1, 0);
+		write(1, "%", 1);
+		counter++;
+	}
+	return (counter);
+}
+
+int ft_unsigned_decimal(unsigned int c, t_struct flags)
+{
+	char *pointer;
+	int counter;
+	int i;
+
+	i = 0;
+	counter = 0;
+	pointer = ft_itoa(c);
+	if (flags.zero > 0 && flags.minus == 0)
+	{
+		counter += print_width(flags.width, ft_strlen(pointer), flags.zero);
+		while (pointer[i])
+		{
+			write(1, &pointer[i], 1);
+			i++, counter++;
+		}
+	}
+	if (flags.minus == 1)
+	{
+		while (pointer[i])
+		{
+			write(1, &pointer[i], 1);
+			i++, counter++;
+		}
+		counter += print_width(flags.width, ft_strlen(pointer), 0);
+	}
+	if (flags.minus == 0 && flags.zero == 0)
+	{
+		counter += print_width(flags.width, ft_strlen(pointer), 0);
+		while (pointer[i])
+		{
+			write(1, &pointer[i], 1);
+			i++, counter++;
+		}
+	}
+	return (counter);
+}
+
+int ft_pointer_output(unsigned long long c, t_struct flags)
+{
+	int i;
+	int counter;
+
+	i = 0;
+	char *pointer;
+	pointer = ft_rebase(c, 16);
+	while (pointer[i])
+	{
+		write(1, &pointer[i], 1);
+		i++, counter++;
+	}
+	return (counter);
+}
+char *ft_rebase(unsigned long long c, int base)
+{
+	int counter;
+	char *array;
+	unsigned long long save;
+
+	counter = 0;
+	save = c;
+	if (c == 0)
+		return (ft_strdup("0"));
+	while (c != 0)
+	{
+		c /= base;
+		counter++;
+	}
+	array = malloc(sizeof(char) * (counter + 1));
+	if (!array)
+		return (NULL);
+	array[counter] = '\0';
+	array = write_base(save, base, array, counter);
+	return (array);
+}
+
+static char *write_base(unsigned long long save, int base, char *array, int
+counter)
+{
+	while (save != 0 )
+	{
+		if (save % base < 10)
+			array[counter - 1] = (save % base) + 48;
+		else
+			array[counter - 1] = (save % base) + 55;
+		save /= base;
+		counter--;
+	}
+	return (array);
+}

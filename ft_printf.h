@@ -39,5 +39,12 @@ int ft_int_output(int c, t_struct flags);
 char	*ft_itoa(int n);
 char	*ft_strdup(const char *str);
 void	*ft_memcpy (void *dst, const void *src, size_t n);
+int ft_percent_output(t_struct flags);
+void struct_init(t_struct *flags);
+int ft_unsigned_decimal(unsigned int c, t_struct flags);
+int ft_pointer_output(unsigned long long c, t_struct flags);
+char *ft_rebase(unsigned long long c, int base);
+static char *write_base(unsigned long long save, int base, char *array, int
+counter);
 #endif //PRINTF_FT_PRINTF_H
 

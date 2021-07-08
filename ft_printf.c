@@ -8,39 +8,50 @@ int ft_printf(char *format, ...)
 	int length;
 	va_list argc;
 
+	length = 0;
 	va_start(argc, format);
 	length = read_format(format, argc);
 	va_end(argc);
 	return (length);
 }
 
+void struct_init(t_struct *flags)
+{
+	flags->length = 0;
+	flags->width = 0;
+	flags->minus = 0;
+	flags->zero = 0;
+}
+
 int read_format(char *format, va_list arg)
 {
 	int i;
+	int length;
 	t_struct flags;
 	t_struct temp;
 
 	i = 0;
+	length = 0;
 	while(format[i])
 	{
 		// Зануляю структуру перед каждым проходом
-		temp = (t_struct){0, 0, 0, 0, 0, 0, 0, 0};
+		struct_init(&flags);
 		if (format[i] == '%' && format[i + 1] != '\0')
 		{
 			// Поиск всех флагов в строке
 			i = ft_parse_flags(format, ++i, &flags, arg);
 			// Печатаю в зависимости от типа данных и запоинаю символы в
 			// струткуру
-			flags.length += parse_data(format[i], arg, flags);
+			length += parse_data(format[i], arg, flags);
 			i++;
 		}
 		else
 		{
-			flags.length += write(1, &format[i], 1);
+			length += write(1, &format[i], 1);
 			i++;
 		}
 	}
-	return (flags.length);
+	return (length);
 }
 
 int	ft_parse_flags(char *format, int i, t_struct *flags, va_list arg)
@@ -82,5 +93,11 @@ int		parse_data(int c, va_list arg, t_struct flags)
 		i = ft_string_output(va_arg(arg, char *), flags);
 	else if (c == 'd' || c == 'i')
 		i = ft_int_output(va_arg(arg, int), flags);
+	else if (c == '%')
+		i = ft_percent_output(flags);
+	else if (c == 'u')
+		i = ft_unsigned_decimal(va_arg(arg, unsigned int), flags);
+	else if (c == 'p')
+		i = ft_pointer_output(va_arg(arg, unsigned long long), flags);
 	return (i);
 }
