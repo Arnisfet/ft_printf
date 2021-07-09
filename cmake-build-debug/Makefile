@@ -142,6 +142,33 @@ printf/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/build
 .PHONY : printf/fast
 
+ft_char_output.o: ft_char_output.c.o
+
+.PHONY : ft_char_output.o
+
+# target to build an object file
+ft_char_output.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/ft_char_output.c.o
+.PHONY : ft_char_output.c.o
+
+ft_char_output.i: ft_char_output.c.i
+
+.PHONY : ft_char_output.i
+
+# target to preprocess a source file
+ft_char_output.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/ft_char_output.c.i
+.PHONY : ft_char_output.c.i
+
+ft_char_output.s: ft_char_output.c.s
+
+.PHONY : ft_char_output.s
+
+# target to generate assembly for a file
+ft_char_output.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/ft_char_output.c.s
+.PHONY : ft_char_output.c.s
+
 ft_checkers.o: ft_checkers.c.o
 
 .PHONY : ft_checkers.o
@@ -168,6 +195,60 @@ ft_checkers.s: ft_checkers.c.s
 ft_checkers.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/ft_checkers.c.s
 .PHONY : ft_checkers.c.s
+
+ft_hexadecimal_output.o: ft_hexadecimal_output.c.o
+
+.PHONY : ft_hexadecimal_output.o
+
+# target to build an object file
+ft_hexadecimal_output.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/ft_hexadecimal_output.c.o
+.PHONY : ft_hexadecimal_output.c.o
+
+ft_hexadecimal_output.i: ft_hexadecimal_output.c.i
+
+.PHONY : ft_hexadecimal_output.i
+
+# target to preprocess a source file
+ft_hexadecimal_output.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/ft_hexadecimal_output.c.i
+.PHONY : ft_hexadecimal_output.c.i
+
+ft_hexadecimal_output.s: ft_hexadecimal_output.c.s
+
+.PHONY : ft_hexadecimal_output.s
+
+# target to generate assembly for a file
+ft_hexadecimal_output.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/ft_hexadecimal_output.c.s
+.PHONY : ft_hexadecimal_output.c.s
+
+ft_int_output.o: ft_int_output.c.o
+
+.PHONY : ft_int_output.o
+
+# target to build an object file
+ft_int_output.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/ft_int_output.c.o
+.PHONY : ft_int_output.c.o
+
+ft_int_output.i: ft_int_output.c.i
+
+.PHONY : ft_int_output.i
+
+# target to preprocess a source file
+ft_int_output.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/ft_int_output.c.i
+.PHONY : ft_int_output.c.i
+
+ft_int_output.s: ft_int_output.c.s
+
+.PHONY : ft_int_output.s
+
+# target to generate assembly for a file
+ft_int_output.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/ft_int_output.c.s
+.PHONY : ft_int_output.c.s
 
 ft_itoa.o: ft_itoa.c.o
 
@@ -196,32 +277,59 @@ ft_itoa.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/ft_itoa.c.s
 .PHONY : ft_itoa.c.s
 
-ft_outputs.o: ft_outputs.c.o
+ft_percent_output.o: ft_percent_output.c.o
 
-.PHONY : ft_outputs.o
+.PHONY : ft_percent_output.o
 
 # target to build an object file
-ft_outputs.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/ft_outputs.c.o
-.PHONY : ft_outputs.c.o
+ft_percent_output.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/ft_percent_output.c.o
+.PHONY : ft_percent_output.c.o
 
-ft_outputs.i: ft_outputs.c.i
+ft_percent_output.i: ft_percent_output.c.i
 
-.PHONY : ft_outputs.i
+.PHONY : ft_percent_output.i
 
 # target to preprocess a source file
-ft_outputs.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/ft_outputs.c.i
-.PHONY : ft_outputs.c.i
+ft_percent_output.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/ft_percent_output.c.i
+.PHONY : ft_percent_output.c.i
 
-ft_outputs.s: ft_outputs.c.s
+ft_percent_output.s: ft_percent_output.c.s
 
-.PHONY : ft_outputs.s
+.PHONY : ft_percent_output.s
 
 # target to generate assembly for a file
-ft_outputs.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/ft_outputs.c.s
-.PHONY : ft_outputs.c.s
+ft_percent_output.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/ft_percent_output.c.s
+.PHONY : ft_percent_output.c.s
+
+ft_pointer_output.o: ft_pointer_output.c.o
+
+.PHONY : ft_pointer_output.o
+
+# target to build an object file
+ft_pointer_output.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/ft_pointer_output.c.o
+.PHONY : ft_pointer_output.c.o
+
+ft_pointer_output.i: ft_pointer_output.c.i
+
+.PHONY : ft_pointer_output.i
+
+# target to preprocess a source file
+ft_pointer_output.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/ft_pointer_output.c.i
+.PHONY : ft_pointer_output.c.i
+
+ft_pointer_output.s: ft_pointer_output.c.s
+
+.PHONY : ft_pointer_output.s
+
+# target to generate assembly for a file
+ft_pointer_output.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/ft_pointer_output.c.s
+.PHONY : ft_pointer_output.c.s
 
 ft_printf.o: ft_printf.c.o
 
@@ -249,6 +357,87 @@ ft_printf.s: ft_printf.c.s
 ft_printf.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/ft_printf.c.s
 .PHONY : ft_printf.c.s
+
+ft_putstr.o: ft_putstr.c.o
+
+.PHONY : ft_putstr.o
+
+# target to build an object file
+ft_putstr.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/ft_putstr.c.o
+.PHONY : ft_putstr.c.o
+
+ft_putstr.i: ft_putstr.c.i
+
+.PHONY : ft_putstr.i
+
+# target to preprocess a source file
+ft_putstr.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/ft_putstr.c.i
+.PHONY : ft_putstr.c.i
+
+ft_putstr.s: ft_putstr.c.s
+
+.PHONY : ft_putstr.s
+
+# target to generate assembly for a file
+ft_putstr.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/ft_putstr.c.s
+.PHONY : ft_putstr.c.s
+
+ft_string_output.o: ft_string_output.c.o
+
+.PHONY : ft_string_output.o
+
+# target to build an object file
+ft_string_output.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/ft_string_output.c.o
+.PHONY : ft_string_output.c.o
+
+ft_string_output.i: ft_string_output.c.i
+
+.PHONY : ft_string_output.i
+
+# target to preprocess a source file
+ft_string_output.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/ft_string_output.c.i
+.PHONY : ft_string_output.c.i
+
+ft_string_output.s: ft_string_output.c.s
+
+.PHONY : ft_string_output.s
+
+# target to generate assembly for a file
+ft_string_output.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/ft_string_output.c.s
+.PHONY : ft_string_output.c.s
+
+ft_unsigned_decimal_output.o: ft_unsigned_decimal_output.c.o
+
+.PHONY : ft_unsigned_decimal_output.o
+
+# target to build an object file
+ft_unsigned_decimal_output.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/ft_unsigned_decimal_output.c.o
+.PHONY : ft_unsigned_decimal_output.c.o
+
+ft_unsigned_decimal_output.i: ft_unsigned_decimal_output.c.i
+
+.PHONY : ft_unsigned_decimal_output.i
+
+# target to preprocess a source file
+ft_unsigned_decimal_output.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/ft_unsigned_decimal_output.c.i
+.PHONY : ft_unsigned_decimal_output.c.i
+
+ft_unsigned_decimal_output.s: ft_unsigned_decimal_output.c.s
+
+.PHONY : ft_unsigned_decimal_output.s
+
+# target to generate assembly for a file
+ft_unsigned_decimal_output.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/ft_unsigned_decimal_output.c.s
+.PHONY : ft_unsigned_decimal_output.c.s
 
 initilize_flags.o: initilize_flags.c.o
 
@@ -304,6 +493,33 @@ main.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/main.c.s
 .PHONY : main.c.s
 
+print_width.o: print_width.c.o
+
+.PHONY : print_width.o
+
+# target to build an object file
+print_width.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/print_width.c.o
+.PHONY : print_width.c.o
+
+print_width.i: print_width.c.i
+
+.PHONY : print_width.i
+
+# target to preprocess a source file
+print_width.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/print_width.c.i
+.PHONY : print_width.c.i
+
+print_width.s: print_width.c.s
+
+.PHONY : print_width.s
+
+# target to generate assembly for a file
+print_width.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/print_width.c.s
+.PHONY : print_width.c.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -313,24 +529,48 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... printf"
+	@echo "... ft_char_output.o"
+	@echo "... ft_char_output.i"
+	@echo "... ft_char_output.s"
 	@echo "... ft_checkers.o"
 	@echo "... ft_checkers.i"
 	@echo "... ft_checkers.s"
+	@echo "... ft_hexadecimal_output.o"
+	@echo "... ft_hexadecimal_output.i"
+	@echo "... ft_hexadecimal_output.s"
+	@echo "... ft_int_output.o"
+	@echo "... ft_int_output.i"
+	@echo "... ft_int_output.s"
 	@echo "... ft_itoa.o"
 	@echo "... ft_itoa.i"
 	@echo "... ft_itoa.s"
-	@echo "... ft_outputs.o"
-	@echo "... ft_outputs.i"
-	@echo "... ft_outputs.s"
+	@echo "... ft_percent_output.o"
+	@echo "... ft_percent_output.i"
+	@echo "... ft_percent_output.s"
+	@echo "... ft_pointer_output.o"
+	@echo "... ft_pointer_output.i"
+	@echo "... ft_pointer_output.s"
 	@echo "... ft_printf.o"
 	@echo "... ft_printf.i"
 	@echo "... ft_printf.s"
+	@echo "... ft_putstr.o"
+	@echo "... ft_putstr.i"
+	@echo "... ft_putstr.s"
+	@echo "... ft_string_output.o"
+	@echo "... ft_string_output.i"
+	@echo "... ft_string_output.s"
+	@echo "... ft_unsigned_decimal_output.o"
+	@echo "... ft_unsigned_decimal_output.i"
+	@echo "... ft_unsigned_decimal_output.s"
 	@echo "... initilize_flags.o"
 	@echo "... initilize_flags.i"
 	@echo "... initilize_flags.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... print_width.o"
+	@echo "... print_width.i"
+	@echo "... print_width.s"
 .PHONY : help
 
 

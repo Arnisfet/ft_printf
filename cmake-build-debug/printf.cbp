@@ -78,13 +78,25 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/Users/mrudge/Desktop/printf/ft_char_output.c">
+			<Option target="printf"/>
+		</Unit>
 		<Unit filename="/Users/mrudge/Desktop/printf/ft_checkers.c">
+			<Option target="printf"/>
+		</Unit>
+		<Unit filename="/Users/mrudge/Desktop/printf/ft_hexadecimal_output.c">
+			<Option target="printf"/>
+		</Unit>
+		<Unit filename="/Users/mrudge/Desktop/printf/ft_int_output.c">
 			<Option target="printf"/>
 		</Unit>
 		<Unit filename="/Users/mrudge/Desktop/printf/ft_itoa.c">
 			<Option target="printf"/>
 		</Unit>
-		<Unit filename="/Users/mrudge/Desktop/printf/ft_outputs.c">
+		<Unit filename="/Users/mrudge/Desktop/printf/ft_percent_output.c">
+			<Option target="printf"/>
+		</Unit>
+		<Unit filename="/Users/mrudge/Desktop/printf/ft_pointer_output.c">
 			<Option target="printf"/>
 		</Unit>
 		<Unit filename="/Users/mrudge/Desktop/printf/ft_printf.c">
@@ -93,10 +105,22 @@
 		<Unit filename="/Users/mrudge/Desktop/printf/ft_printf.h">
 			<Option target="printf"/>
 		</Unit>
+		<Unit filename="/Users/mrudge/Desktop/printf/ft_putstr.c">
+			<Option target="printf"/>
+		</Unit>
+		<Unit filename="/Users/mrudge/Desktop/printf/ft_string_output.c">
+			<Option target="printf"/>
+		</Unit>
+		<Unit filename="/Users/mrudge/Desktop/printf/ft_unsigned_decimal_output.c">
+			<Option target="printf"/>
+		</Unit>
 		<Unit filename="/Users/mrudge/Desktop/printf/initilize_flags.c">
 			<Option target="printf"/>
 		</Unit>
 		<Unit filename="/Users/mrudge/Desktop/printf/main.c">
+			<Option target="printf"/>
+		</Unit>
+		<Unit filename="/Users/mrudge/Desktop/printf/print_width.c">
 			<Option target="printf"/>
 		</Unit>
 		<Unit filename="/Users/mrudge/Desktop/printf/CMakeLists.txt">

@@ -4,9 +4,9 @@
 
 #include "ft_printf.h"
 
-t_struct initilize_digit(char c, t_struct flags)
+t_struct	initilize_digit(char c, t_struct flags)
 {
-	if(flags.star == 1)
+	if (flags.star == 1)
 		flags.width = 0;
 	flags.width = (flags.width * 10) + (c - '0');
 	return (flags);

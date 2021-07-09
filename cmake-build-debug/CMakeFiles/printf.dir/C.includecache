@@ -6,7 +6,23 @@
 
 #IncludeRegexTransform: 
 
-/Users/mrudge/Desktop/printf/ft_outputs.c
+/Users/mrudge/Desktop/printf/ft_int_output.c
+ft_printf.h
+/Users/mrudge/Desktop/printf/ft_printf.h
+
+/Users/mrudge/Desktop/printf/ft_itoa.c
+ft_printf.h
+/Users/mrudge/Desktop/printf/ft_printf.h
+
+/Users/mrudge/Desktop/printf/ft_percent_output.c
+ft_printf.h
+/Users/mrudge/Desktop/printf/ft_printf.h
+
+/Users/mrudge/Desktop/printf/ft_pointer_output.c
+ft_printf.h
+/Users/mrudge/Desktop/printf/ft_printf.h
+
+/Users/mrudge/Desktop/printf/ft_printf.c
 ft_printf.h
 /Users/mrudge/Desktop/printf/ft_printf.h
 
