@@ -4,7 +4,7 @@
 
 #include "ft_printf.h"
 
-int	ft_putstr(char *format)
+int	ft_putstr(const char *format)
 {
 	int	i;
 

@@ -10,9 +10,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/printf.dir/ft_putstr.c.o"
   "CMakeFiles/printf.dir/ft_string_output.c.o"
   "CMakeFiles/printf.dir/ft_unsigned_decimal_output.c.o"
-  "CMakeFiles/printf.dir/initilize_flags.c.o"
   "CMakeFiles/printf.dir/main.c.o"
-  "CMakeFiles/printf.dir/print_width.c.o"
   "printf"
   "printf.pdb"
 )

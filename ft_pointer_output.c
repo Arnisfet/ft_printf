@@ -11,15 +11,8 @@ int	ft_pointer_output(unsigned long long c, t_struct flags)
 	pointer = ft_itoa_16(c);
 	if (c == 0)
 		flags.length += ft_write_zero(flags);
-	else if (flags.minus == 1)
-	{
-		write(1, "0x", 2), flags.length += 2;
-		flags.length += ft_putstr(pointer);
-		flags.length += print_width(flags.width, ft_strlen(pointer) + 2, 0);
-	}
 	else
 	{
-		flags.length += print_width(flags.width, ft_strlen(pointer) + 2, 0);
 		write(1, "0x", 2), flags.length += 2;
 		flags.length += ft_putstr(pointer);
 	}
@@ -29,18 +22,8 @@ int	ft_pointer_output(unsigned long long c, t_struct flags)
 
 int	ft_write_zero(t_struct flags)
 {
-	if (flags.minus == 1)
-	{
-		write (1, "0x", 2), flags.length += 2;
-		write (1, "0", 1), flags.length += 1;
-		flags.length += print_width(flags.width, 3, 0);
-	}
-	else
-	{
-		flags.length += print_width(flags.width, 3, 0);
-		write (1, "0x", 2), flags.length += 2;
-		write (1, "0", 1), flags.length += 1;
-	}
+	write (1, "0x", 2), flags.length += 2;
+	write (1, "0", 1), flags.length += 1;
 	return (flags.length);
 }
 

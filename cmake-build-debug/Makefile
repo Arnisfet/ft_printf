@@ -439,33 +439,6 @@ ft_unsigned_decimal_output.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/ft_unsigned_decimal_output.c.s
 .PHONY : ft_unsigned_decimal_output.c.s
 
-initilize_flags.o: initilize_flags.c.o
-
-.PHONY : initilize_flags.o
-
-# target to build an object file
-initilize_flags.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/initilize_flags.c.o
-.PHONY : initilize_flags.c.o
-
-initilize_flags.i: initilize_flags.c.i
-
-.PHONY : initilize_flags.i
-
-# target to preprocess a source file
-initilize_flags.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/initilize_flags.c.i
-.PHONY : initilize_flags.c.i
-
-initilize_flags.s: initilize_flags.c.s
-
-.PHONY : initilize_flags.s
-
-# target to generate assembly for a file
-initilize_flags.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/initilize_flags.c.s
-.PHONY : initilize_flags.c.s
-
 main.o: main.c.o
 
 .PHONY : main.o
@@ -492,33 +465,6 @@ main.s: main.c.s
 main.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/main.c.s
 .PHONY : main.c.s
-
-print_width.o: print_width.c.o
-
-.PHONY : print_width.o
-
-# target to build an object file
-print_width.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/print_width.c.o
-.PHONY : print_width.c.o
-
-print_width.i: print_width.c.i
-
-.PHONY : print_width.i
-
-# target to preprocess a source file
-print_width.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/print_width.c.i
-.PHONY : print_width.c.i
-
-print_width.s: print_width.c.s
-
-.PHONY : print_width.s
-
-# target to generate assembly for a file
-print_width.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/print_width.c.s
-.PHONY : print_width.c.s
 
 # Help Target
 help:
@@ -562,15 +508,9 @@ help:
 	@echo "... ft_unsigned_decimal_output.o"
 	@echo "... ft_unsigned_decimal_output.i"
 	@echo "... ft_unsigned_decimal_output.s"
-	@echo "... initilize_flags.o"
-	@echo "... initilize_flags.i"
-	@echo "... initilize_flags.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
-	@echo "... print_width.o"
-	@echo "... print_width.i"
-	@echo "... print_width.s"
 .PHONY : help
 
 

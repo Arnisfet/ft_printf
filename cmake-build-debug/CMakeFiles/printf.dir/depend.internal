@@ -34,12 +34,6 @@ CMakeFiles/printf.dir/ft_string_output.c.o
 CMakeFiles/printf.dir/ft_unsigned_decimal_output.c.o
  /Users/mrudge/Desktop/printf/ft_printf.h
  /Users/mrudge/Desktop/printf/ft_unsigned_decimal_output.c
-CMakeFiles/printf.dir/initilize_flags.c.o
- /Users/mrudge/Desktop/printf/ft_printf.h
- /Users/mrudge/Desktop/printf/initilize_flags.c
 CMakeFiles/printf.dir/main.c.o
  /Users/mrudge/Desktop/printf/ft_printf.h
  /Users/mrudge/Desktop/printf/main.c
-CMakeFiles/printf.dir/print_width.c.o
- /Users/mrudge/Desktop/printf/ft_printf.h
- /Users/mrudge/Desktop/printf/print_width.c

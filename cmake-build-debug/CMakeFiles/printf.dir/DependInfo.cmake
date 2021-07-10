@@ -15,9 +15,7 @@ set(CMAKE_DEPENDS_CHECK_C
   "/Users/mrudge/Desktop/printf/ft_putstr.c" "/Users/mrudge/Desktop/printf/cmake-build-debug/CMakeFiles/printf.dir/ft_putstr.c.o"
   "/Users/mrudge/Desktop/printf/ft_string_output.c" "/Users/mrudge/Desktop/printf/cmake-build-debug/CMakeFiles/printf.dir/ft_string_output.c.o"
   "/Users/mrudge/Desktop/printf/ft_unsigned_decimal_output.c" "/Users/mrudge/Desktop/printf/cmake-build-debug/CMakeFiles/printf.dir/ft_unsigned_decimal_output.c.o"
-  "/Users/mrudge/Desktop/printf/initilize_flags.c" "/Users/mrudge/Desktop/printf/cmake-build-debug/CMakeFiles/printf.dir/initilize_flags.c.o"
   "/Users/mrudge/Desktop/printf/main.c" "/Users/mrudge/Desktop/printf/cmake-build-debug/CMakeFiles/printf.dir/main.c.o"
-  "/Users/mrudge/Desktop/printf/print_width.c" "/Users/mrudge/Desktop/printf/cmake-build-debug/CMakeFiles/printf.dir/print_width.c.o"
   )
 set(CMAKE_C_COMPILER_ID "AppleClang")
 

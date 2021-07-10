@@ -60,10 +60,6 @@ ft_printf.h
 ft_printf.h
 /Users/mrudge/Desktop/printf/ft_printf.h
 
-/Users/mrudge/Desktop/printf/initilize_flags.c
-ft_printf.h
-/Users/mrudge/Desktop/printf/ft_printf.h
-
 /Users/mrudge/Desktop/printf/main.c
 stdio.h
 -
@@ -71,10 +67,6 @@ stdlib.h
 -
 stdarg.h
 -
-ft_printf.h
-/Users/mrudge/Desktop/printf/ft_printf.h
-
-/Users/mrudge/Desktop/printf/print_width.c
 ft_printf.h
 /Users/mrudge/Desktop/printf/ft_printf.h
 

@@ -3,7 +3,7 @@
 
 #include "ft_printf.h"
 
-int	ft_printf(char *format, ...)
+int	ft_printf(const char *format, ...)
 {
 	int			length;
 	va_list		argc;
@@ -18,12 +18,9 @@ int	ft_printf(char *format, ...)
 void	struct_init(t_struct *flags)
 {
 	flags->length = 0;
-	flags->width = 0;
-	flags->minus = 0;
-	flags->zero = 0;
 }
 
-int	read_format(char *format, va_list arg)
+int	read_format(const char *format, va_list arg)
 {
 	int			i;
 	int			length;
@@ -50,19 +47,12 @@ int	read_format(char *format, va_list arg)
 	return (length);
 }
 
-int	ft_parse_flags(char *format, int i, t_struct *flags, va_list arg)
+int	ft_parse_flags(const char *format, int i, t_struct *flags, va_list arg)
 {
 	while (format[i])
 	{
-		if (!check_flags(format[i]) && !check_type(format[i]) && !ft_isdigit
-			(format[i]))
+		if (!check_type(format[i]))
 			break ;
-		if (format[i] == '0' && flags->width == 0 && flags->minus == 0)
-			flags->zero = 1;
-		if (format[i] == '-')
-			*flags = initilize_minus(*flags);
-		if (ft_isdigit(format[i]))
-			*flags = initilize_digit(format[i], *flags);
 		if (check_type(format[i]))
 		{
 			flags->type = format[i];

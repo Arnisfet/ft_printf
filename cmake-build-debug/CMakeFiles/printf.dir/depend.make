@@ -34,12 +34,6 @@ CMakeFiles/printf.dir/ft_string_output.c.o: ../ft_string_output.c
 CMakeFiles/printf.dir/ft_unsigned_decimal_output.c.o: ../ft_printf.h
 CMakeFiles/printf.dir/ft_unsigned_decimal_output.c.o: ../ft_unsigned_decimal_output.c
 
-CMakeFiles/printf.dir/initilize_flags.c.o: ../ft_printf.h
-CMakeFiles/printf.dir/initilize_flags.c.o: ../initilize_flags.c
-
 CMakeFiles/printf.dir/main.c.o: ../ft_printf.h
 CMakeFiles/printf.dir/main.c.o: ../main.c
-
-CMakeFiles/printf.dir/print_width.c.o: ../ft_printf.h
-CMakeFiles/printf.dir/print_width.c.o: ../print_width.c
 
