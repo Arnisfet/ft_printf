@@ -1,25 +1,26 @@
 //
 // Created by vitya on 25.06.2021.
 //
-#include <stdarg.h>
-#include <stdlib.h>
-#include <unistd.h>
-#include <stdio.h>
 
 #ifndef FT_PRINTF_H
-#define FT_PRINTF_H
+# define FT_PRINTF_H
 
-typedef struct t_struct
+# include <stdarg.h>
+# include <stdlib.h>
+# include <unistd.h>
+# include <stdio.h>
+
+typedef struct s_struct
 {
 	const char	*format;
 	int			type;
 	int			length;
 	int			width;
-	int 		minus;
+	int			minus;
 	int			zero;
 	int			dot;
 	int			star;
-} 					t_struct;
+}						t_struct;
 int			ft_printf(char *format, ...);
 int			read_format(char *format, va_list arg);
 void		struct_init(t_struct *flags);
@@ -46,5 +47,4 @@ int			ft_write_zero(t_struct flags);
 int			ft_hexademical_output(unsigned int c, t_struct flags);
 int			ft_putstr(char *format);
 int			parse_int_flag(t_struct flags, char *pointer, int len, int c);
-#endif //PRINTF_FT_PRINTF_H
-
+#endif

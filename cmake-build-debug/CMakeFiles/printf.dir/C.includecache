@@ -6,6 +6,38 @@
 
 #IncludeRegexTransform: 
 
+/Users/mrudge/Desktop/printf/ft_char_output.c
+ft_printf.h
+/Users/mrudge/Desktop/printf/ft_printf.h
+
+/Users/mrudge/Desktop/printf/ft_checkers.c
+ft_printf.h
+/Users/mrudge/Desktop/printf/ft_printf.h
+
+/Users/mrudge/Desktop/printf/ft_hexadecimal_output.c
+ft_printf.h
+/Users/mrudge/Desktop/printf/ft_printf.h
+
+/Users/mrudge/Desktop/printf/ft_int_output.c
+ft_printf.h
+/Users/mrudge/Desktop/printf/ft_printf.h
+
+/Users/mrudge/Desktop/printf/ft_itoa.c
+ft_printf.h
+/Users/mrudge/Desktop/printf/ft_printf.h
+
+/Users/mrudge/Desktop/printf/ft_percent_output.c
+ft_printf.h
+/Users/mrudge/Desktop/printf/ft_printf.h
+
+/Users/mrudge/Desktop/printf/ft_pointer_output.c
+ft_printf.h
+/Users/mrudge/Desktop/printf/ft_printf.h
+
+/Users/mrudge/Desktop/printf/ft_printf.c
+ft_printf.h
+/Users/mrudge/Desktop/printf/ft_printf.h
+
 /Users/mrudge/Desktop/printf/ft_printf.h
 stdarg.h
 -
@@ -16,6 +48,22 @@ unistd.h
 stdio.h
 -
 
+/Users/mrudge/Desktop/printf/ft_putstr.c
+ft_printf.h
+/Users/mrudge/Desktop/printf/ft_printf.h
+
+/Users/mrudge/Desktop/printf/ft_string_output.c
+ft_printf.h
+/Users/mrudge/Desktop/printf/ft_printf.h
+
+/Users/mrudge/Desktop/printf/ft_unsigned_decimal_output.c
+ft_printf.h
+/Users/mrudge/Desktop/printf/ft_printf.h
+
+/Users/mrudge/Desktop/printf/initilize_flags.c
+ft_printf.h
+/Users/mrudge/Desktop/printf/ft_printf.h
+
 /Users/mrudge/Desktop/printf/main.c
 stdio.h
 -
@@ -23,6 +71,10 @@ stdlib.h
 -
 stdarg.h
 -
+ft_printf.h
+/Users/mrudge/Desktop/printf/ft_printf.h
+
+/Users/mrudge/Desktop/printf/print_width.c
 ft_printf.h
 /Users/mrudge/Desktop/printf/ft_printf.h
 
