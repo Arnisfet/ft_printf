@@ -42,7 +42,7 @@ int			ft_percent_output(t_struct flags);
 int			ft_unsigned_decimal(unsigned int c, t_struct flags);
 int			ft_pointer_output(unsigned long long c, t_struct flags);
 char		*ft_itoa_16(unsigned long long a);
-int			ft_write_zero(int counter, t_struct flags);
+int			ft_write_zero(t_struct flags);
 int			ft_hexademical_output(unsigned int c, t_struct flags);
 int			ft_putstr(char *format);
 int			parse_int_flag(t_struct flags, char *pointer, int len, int c);
