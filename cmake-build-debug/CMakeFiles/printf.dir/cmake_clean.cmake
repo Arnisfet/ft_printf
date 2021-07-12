@@ -2,6 +2,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/printf.dir/ft_char_output.c.o"
   "CMakeFiles/printf.dir/ft_checkers.c.o"
   "CMakeFiles/printf.dir/ft_hexadecimal_output.c.o"
+  "CMakeFiles/printf.dir/ft_hexadecimal_output_X.c.o"
   "CMakeFiles/printf.dir/ft_int_output.c.o"
   "CMakeFiles/printf.dir/ft_itoa.c.o"
   "CMakeFiles/printf.dir/ft_percent_output.c.o"

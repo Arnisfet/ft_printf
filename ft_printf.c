@@ -92,5 +92,7 @@ int	parse_data(int c, va_list arg, t_struct flags)
 		i = ft_pointer_output(va_arg(arg, unsigned long long), flags);
 	else if (c == 'x')
 		i = ft_hexademical_output(va_arg(arg, unsigned int), flags);
+	else if (c == 'X')
+		i = ft_hexademical_output_X(va_arg(arg, unsigned int), flags);
 	return (i);
 }

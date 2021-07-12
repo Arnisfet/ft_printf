@@ -7,6 +7,7 @@ set(CMAKE_DEPENDS_CHECK_C
   "/Users/mrudge/Desktop/printf/ft_char_output.c" "/Users/mrudge/Desktop/printf/cmake-build-debug/CMakeFiles/printf.dir/ft_char_output.c.o"
   "/Users/mrudge/Desktop/printf/ft_checkers.c" "/Users/mrudge/Desktop/printf/cmake-build-debug/CMakeFiles/printf.dir/ft_checkers.c.o"
   "/Users/mrudge/Desktop/printf/ft_hexadecimal_output.c" "/Users/mrudge/Desktop/printf/cmake-build-debug/CMakeFiles/printf.dir/ft_hexadecimal_output.c.o"
+  "/Users/mrudge/Desktop/printf/ft_hexadecimal_output_X.c" "/Users/mrudge/Desktop/printf/cmake-build-debug/CMakeFiles/printf.dir/ft_hexadecimal_output_X.c.o"
   "/Users/mrudge/Desktop/printf/ft_int_output.c" "/Users/mrudge/Desktop/printf/cmake-build-debug/CMakeFiles/printf.dir/ft_int_output.c.o"
   "/Users/mrudge/Desktop/printf/ft_itoa.c" "/Users/mrudge/Desktop/printf/cmake-build-debug/CMakeFiles/printf.dir/ft_itoa.c.o"
   "/Users/mrudge/Desktop/printf/ft_percent_output.c" "/Users/mrudge/Desktop/printf/cmake-build-debug/CMakeFiles/printf.dir/ft_percent_output.c.o"

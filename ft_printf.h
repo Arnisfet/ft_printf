@@ -47,4 +47,6 @@ int			ft_write_zero(t_struct flags);
 int			ft_hexademical_output(unsigned int c, t_struct flags);
 int			ft_putstr(char *format);
 int			parse_int_flag(t_struct flags, char *pointer, int len, int c);
+int			ft_hexademical_output_X(unsigned int c, t_struct flags);
+char		*ft_itoa_16_X(unsigned long long a);
 #endif

@@ -10,6 +10,9 @@ CMakeFiles/printf.dir/ft_checkers.c.o: ../ft_printf.h
 CMakeFiles/printf.dir/ft_hexadecimal_output.c.o: ../ft_hexadecimal_output.c
 CMakeFiles/printf.dir/ft_hexadecimal_output.c.o: ../ft_printf.h
 
+CMakeFiles/printf.dir/ft_hexadecimal_output_X.c.o: ../ft_hexadecimal_output_X.c
+CMakeFiles/printf.dir/ft_hexadecimal_output_X.c.o: ../ft_printf.h
+
 CMakeFiles/printf.dir/ft_int_output.c.o: ../ft_int_output.c
 CMakeFiles/printf.dir/ft_int_output.c.o: ../ft_printf.h
 
