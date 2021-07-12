@@ -1,7 +1,7 @@
 //
 // Created by vitya on 25.06.2021.
 
-#include "ft_printf.h"
+#include "includes/ft_printf.h"
 
 int	ft_printf(const char *format, ...)
 {
@@ -25,7 +25,6 @@ int	read_format(const char *format, va_list arg)
 	int			i;
 	int			length;
 	t_struct	flags;
-	t_struct	temp;
 
 	i = 0;
 	length = 0;
@@ -34,7 +33,7 @@ int	read_format(const char *format, va_list arg)
 		struct_init(&flags);
 		if (format[i] == '%' && format[i + 1] != '\0')
 		{
-			i = ft_parse_flags(format, ++i, &flags, arg);
+			i = ft_parse_flags(format, ++i, &flags);
 			length += parse_data(format[i], arg, flags);
 			i++;
 		}
@@ -47,7 +46,7 @@ int	read_format(const char *format, va_list arg)
 	return (length);
 }
 
-int	ft_parse_flags(const char *format, int i, t_struct *flags, va_list arg)
+int	ft_parse_flags(const char *format, int i, t_struct *flags)
 {
 	while (format[i])
 	{

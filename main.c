@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <stdarg.h>
-#include "ft_printf.h"
+#include "includes/ft_printf.h"
 
 int main()
 {
@@ -9,7 +9,7 @@ int main()
 	char z = 'a';
 	int d = -21;
 	unsigned int uns = 4294967295;
-	unsigned int unss = 4242;
+	unsigned int unss = -1018186285;
 	char *p_c = "i hate c";
 	int *p_i = (int *) 6666;
 	char *p_null = NULL;
@@ -92,57 +92,5 @@ int main()
 
 	a = printf("ORIGINAL: he %u hello\n", unss);
 	b = ft_printf("MY      : he %u hello\n", unss);
-	printf("orlen: %d\nmylen: %d\n\n", a, b);
-
-	a = printf("ORIGINAL: he %p hello\n", p_c);
-	b = ft_printf("MY      : he %p hello\n", p_c);
-	printf("orlen: %d\nmylen: %d\n\n", a, b);
-
-	a = printf("ORIGINAL: he %p %s %d %c %% hello\n", p_i, s1, d, z);
-	b = ft_printf("MY      : he %p %s %d %c %% hello\n", p_i, s1, d, z);
-	printf("orlen: %d\nmylen: %d\n\n", a, b);
-
-	a = printf("ORIGINAL: he %p hello\n", p_null);
-	b = ft_printf("MY      : he %p hello\n", p_null);
-	printf("orlen: %d\nmylen: %d\n\n", a, b);
-
-	a = printf("ORIGINAL: he %p hello\n", p_c);
-	b = ft_printf("MY      : he %p hello\n", p_c);
-	printf("orlen: %d\nmylen: %d\n\n", a, b);
-
-	a = printf("ORIGINAL: he %p hello\n", p_c);
-	b = ft_printf("MY      : he %p hello\n", p_c);
-	printf("orlen: %d\nmylen: %d\n\n", a, b);
-
-	a = printf("ORIGINAL: he %p hello\n", p_c);
-	b = ft_printf("MY      : he %p hello\n", p_c);
-	printf("orlen: %d\nmylen: %d\n\n", a, b);
-
-	a = printf("ORIGINAL: he %p hello\n", NULL);
-	b = ft_printf("MY      : he %p hello\n", NULL);
-	printf("orlen: %d\nmylen: %d\n\n", a, b);
-
-	a = printf("ORIGINAL: he %p hello\n", NULL);
-	b = ft_printf("MY      : he %p hello\n", NULL);
-	printf("orlen: %d\nmylen: %d\n\n", a, b);
-
-	a = printf("ORIGINAL: he %x hello\n", -123456);
-	b = ft_printf("MY      : he %x hello\n", -123456);
-	printf("orlen: %d\nmylen: %d\n\n", a, b);
-
-	a = printf("ORIGINAL: he %X hello\n", -123456);
-	b = ft_printf("MY      : he %X hello\n", -123456);
-	printf("orlen: %d\nmylen: %d\n\n", a, b);
-
-	a = printf("ORIGINAL: he %X hello\n", unss);
-	b = ft_printf("MY      : he %X hello\n", unss);
-	printf("orlen: %d\nmylen: %d\n\n", a, b);
-
-	a = printf("ORIGINAL: he %X hello\n", unss);
-	b = ft_printf("MY      : he %X hello\n", unss);
-	printf("orlen: %d\nmylen: %d\n\n", a, b);
-
-	a = printf("ORIGINAL: he %X hello\n", 123456);
-	b = ft_printf("MY      : he %X hello\n", 123456);
 	printf("orlen: %d\nmylen: %d\n\n", a, b);
 }
