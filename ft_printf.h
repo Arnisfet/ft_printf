@@ -23,7 +23,7 @@ typedef struct s_struct
 }						t_struct;
 int			ft_printf(const char *format, ...);
 int			ft_parse_flags(const char *format, int i, t_struct *flags, va_list
-arg);
+				arg);
 int			read_format(const char *format, va_list arg);
 void		struct_init(t_struct *flags);
 int			check_type(int c);
@@ -43,4 +43,6 @@ int			ft_write_zero(t_struct flags);
 int			ft_hexademical_output(unsigned int c, t_struct flags);
 int			ft_putstr(const char *format);
 int			parse_int_flag(t_struct flags, char *pointer, int len, int c);
+int			ft_hexademical_output_X(unsigned int c, t_struct flags);
+char		*ft_itoa_16_X(unsigned long long a);
 #endif

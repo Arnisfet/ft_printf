@@ -223,6 +223,33 @@ ft_hexadecimal_output.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/ft_hexadecimal_output.c.s
 .PHONY : ft_hexadecimal_output.c.s
 
+ft_hexadecimal_output_X.o: ft_hexadecimal_output_X.c.o
+
+.PHONY : ft_hexadecimal_output_X.o
+
+# target to build an object file
+ft_hexadecimal_output_X.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/ft_hexadecimal_output_X.c.o
+.PHONY : ft_hexadecimal_output_X.c.o
+
+ft_hexadecimal_output_X.i: ft_hexadecimal_output_X.c.i
+
+.PHONY : ft_hexadecimal_output_X.i
+
+# target to preprocess a source file
+ft_hexadecimal_output_X.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/ft_hexadecimal_output_X.c.i
+.PHONY : ft_hexadecimal_output_X.c.i
+
+ft_hexadecimal_output_X.s: ft_hexadecimal_output_X.c.s
+
+.PHONY : ft_hexadecimal_output_X.s
+
+# target to generate assembly for a file
+ft_hexadecimal_output_X.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/ft_hexadecimal_output_X.c.s
+.PHONY : ft_hexadecimal_output_X.c.s
+
 ft_int_output.o: ft_int_output.c.o
 
 .PHONY : ft_int_output.o
@@ -484,6 +511,9 @@ help:
 	@echo "... ft_hexadecimal_output.o"
 	@echo "... ft_hexadecimal_output.i"
 	@echo "... ft_hexadecimal_output.s"
+	@echo "... ft_hexadecimal_output_X.o"
+	@echo "... ft_hexadecimal_output_X.i"
+	@echo "... ft_hexadecimal_output_X.s"
 	@echo "... ft_int_output.o"
 	@echo "... ft_int_output.i"
 	@echo "... ft_int_output.s"

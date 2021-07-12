@@ -129,4 +129,20 @@ int main()
 	a = printf("ORIGINAL: he %x hello\n", -123456);
 	b = ft_printf("MY      : he %x hello\n", -123456);
 	printf("orlen: %d\nmylen: %d\n\n", a, b);
+
+	a = printf("ORIGINAL: he %X hello\n", -123456);
+	b = ft_printf("MY      : he %X hello\n", -123456);
+	printf("orlen: %d\nmylen: %d\n\n", a, b);
+
+	a = printf("ORIGINAL: he %X hello\n", unss);
+	b = ft_printf("MY      : he %X hello\n", unss);
+	printf("orlen: %d\nmylen: %d\n\n", a, b);
+
+	a = printf("ORIGINAL: he %X hello\n", unss);
+	b = ft_printf("MY      : he %X hello\n", unss);
+	printf("orlen: %d\nmylen: %d\n\n", a, b);
+
+	a = printf("ORIGINAL: he %X hello\n", 123456);
+	b = ft_printf("MY      : he %X hello\n", 123456);
+	printf("orlen: %d\nmylen: %d\n\n", a, b);
 }

@@ -23,6 +23,6 @@ int	parse_int_flag(t_struct flags, char *pointer, int len, int c)
 			write(1, "-", 1), flags.length += 1, len++;
 		flags.length += ft_putstr(pointer);
 	}
-		flags.length += ft_putstr(pointer);
+	flags.length += ft_putstr(pointer);
 	return (flags.length);
 }
