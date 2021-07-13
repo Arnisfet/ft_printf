@@ -16,8 +16,8 @@ int	ft_pointer_output(unsigned long long c, t_struct flags)
 		write(1, "0x", 2), flags.length += 2;
 		flags.length += ft_putstr(pointer);
 	}
-	return (flags.length);
 	free(pointer);
+	return (flags.length);
 }
 
 int	ft_write_zero(t_struct flags)

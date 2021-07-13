@@ -12,6 +12,7 @@ int	ft_int_output(int c, t_struct flags)
 	pointer = ft_itoa(c);
 	len = ft_strlen(pointer);
 	flags.length += parse_int_flag(flags, pointer, len, c);
+	free(pointer);
 	return (flags.length);
 }
 

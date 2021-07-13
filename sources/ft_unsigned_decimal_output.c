@@ -57,5 +57,6 @@ int	ft_unsigned_decimal(unsigned int c, t_struct flags)
 
 	pointer = ft_itoa_uns(c);
 	flags.length += ft_putstr(pointer);
+	free(pointer);
 	return (flags.length);
 }

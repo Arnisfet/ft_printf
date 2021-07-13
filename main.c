@@ -7,7 +7,7 @@ int main()
 {
 	char *s1 = "hello fucking c";
 	char z = 'a';
-	int d = -21;
+	int d = 2147483647;
 	unsigned int uns = 4294967295;
 	unsigned int unss = -1018186285;
 	char *p_c = "i hate c";
@@ -54,8 +54,8 @@ int main()
 	b = ft_printf("MY      : he %d hello\n", -12345);
 	printf("orlen: %d\nmylen: %d\n\n", a, b);
 
-	a = printf("ORIGINAL: he %d hello\n", 0);
-	b = ft_printf("MY      : he %d hello\n", 0);
+	a = printf("ORIGINAL: he %d hello\n", 5456);
+	b = ft_printf("MY      : he %d hello\n", 5456);
 	printf("orlen: %d\nmylen: %d\n\n", a, b);
 
 	a = printf("ORIGINAL: he %d hello\n", 0);
